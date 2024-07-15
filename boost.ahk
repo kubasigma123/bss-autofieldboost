@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
-#include <start>
+#include <start> ; includes script from \lib so it will run
 
 TraySetIcon("images\Field_Dice.ico")
 MyGui := Gui()
@@ -14,5 +14,6 @@ MyGui.Add("Button",, "Start").OnEvent("Click", StartBoosting)
 MyGui.AddText(, "Stop after how many tries (-1 for infinite) ")
 MyGui.AddEdit()
 StopAfter :=MyGui.AddUpDown("vStop Range-1-100", -1)
+
 
 MyGui.Show("w200 h180 Center")
