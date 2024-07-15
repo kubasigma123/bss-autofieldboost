@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
-#include <start>
+#include <script> ; includes script from \lib so it will run
 
 TraySetIcon("images\Field_Dice.ico")
 
@@ -19,6 +19,7 @@ MyGui.AddText(, "Stop after how many tries (-1 for infinite) ")
 MyGui.AddEdit()
 StopAfter := MyGui.AddUpDown("vStop Range-1-100", -1)
 
+<<<<<<< HEAD
 MyGui.AddButton(, "Start").OnEvent("Click", StartBoosting)
 
 MyGui.AddPicture("x220 y5 w25 h25 vGithub", A_SCRiptDir "\images\github.ico")
@@ -32,3 +33,7 @@ MyGui.BackColor := "0xbbbffa"
 Repo(*){
      Run "https://github.com/kubasigma123/bss-autofieldboost"
 }
+=======
+
+MyGui.Show("w200 h180 Center")
+>>>>>>> c6b053d0cc8804fb4afb093cfd994659406dc7f5
