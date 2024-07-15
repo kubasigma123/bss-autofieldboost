@@ -1,6 +1,6 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
-#include <start> ; includes script from \lib so it will run
+#include <script> ; includes script from \lib so it will run
 
 TraySetIcon("images\Field_Dice.ico")
 MyGui := Gui()
