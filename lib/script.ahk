@@ -21,7 +21,7 @@ StartBoosting(*) {
 
     Loop {
         if !WinActive("ahk_exe RobloxPlayerBeta.exe") {
-            MsgBox("RobloxPlayerBeta.exe window is no longer active. Stopping script.", "Error")
+            MsgBox("Robloxd window is no longer active. Stopping script.", "Error")
             Break
         }
 
